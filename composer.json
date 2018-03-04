@@ -1,0 +1,21 @@
+{
+  "name": "kield-01/cakephp3-json-pagination",
+  "description": "JSON Pagination trait for CakePHP 3.x",
+  "type": "library",
+  "license": "GPL",
+  "authors": [
+    {
+      "name": "Roma Kozin",
+      "email": "romanko95.rk@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "cakephp/app": "3.*.*"
+  },
+  "autoload" : {
+    "psr-4" : {
+      "App\\" : "src"
+    }
+  }
+}
