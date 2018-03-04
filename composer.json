@@ -2,7 +2,7 @@
   "name": "kield-01/cakephp3-json-pagination",
   "description": "JSON Pagination trait for CakePHP 3.x",
   "type": "library",
-  "license": "GPL",
+  "license": "GPL-3.0-or-later",
   "authors": [
     {
       "name": "Roma Kozin",
