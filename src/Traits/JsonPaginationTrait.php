@@ -72,7 +72,7 @@ if (!trait_exists('JsonPaginationTrait')) {
          */
         private function getPagesCount()
         {
-            return floor($this->getRecordsCount() / $this->getLimit());
+            return ceil($this->getRecordsCount() / $this->getLimit());
         }
 
         /**
