@@ -1,5 +1,9 @@
 # CakePHP 3.x JSON Pagination Trait
 
+## Badges
+
+[![Github All Releases](https://img.shields.io/github/downloads/KielD-01/cakephp3-json-pagination/total.svg?style=plastic)](https://github.com/KielD-01/cakephp3-json-pagination) ![Packagist](https://img.shields.io/packagist/dt/kield-01/cakephp3-json-pagination.svg)
+
 ## Installation
 `composer require kield-01/cakephp3-json-pagination && composer dump-autoload -o`
 
