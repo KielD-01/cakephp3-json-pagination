@@ -34,6 +34,11 @@ if (!trait_exists('JsonPaginationTrait')) {
             return $this->request->getQuery('page') ? intval($this->request->getQuery('page')) : 1;
         }
 
+        protected function getQuery()
+        {
+            return $this->request->getQuery('q') ? intval($this->request->getQuery('q')) : '';
+        }
+
         /**
          * Returns limit of data to respond
          *
@@ -149,6 +154,7 @@ if (!trait_exists('JsonPaginationTrait')) {
                             $alias => $this->getPage() > $this->getPagesCount() || $this->getPage() <= $this->getPagesCount() ?
                                 $query->page($this->getPage(), $this->getLimit())->toArray() : [],
                             'records' => $this->getRecordsCount(),
+                            'q' => $this->getQuery(),
                             'page' => $this->getPage(),
                             'pages' => $this->getPagesCount(),
                             'limit' => $this->getLimit(),
