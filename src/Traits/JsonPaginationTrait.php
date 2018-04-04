@@ -108,6 +108,7 @@ if (!trait_exists('JsonPaginationTrait')) {
             $pages = $this->getPagesCount();
 
             return [
+                'no_page' => preg_replace('/page=(\d+)/', "page=", $uri),
                 'first' => preg_replace('/page=(\d+)/', "page=1", $uri),
                 'last' => preg_replace('/page=(\d+)/', "page={$this->getPagesCount()}", $uri),
                 'prev' => $page > 1 && $page <= $pages ? preg_replace('/page=(\d+)/', 'page=' . ($this->getPagesCount() - 1), $uri) : null,
